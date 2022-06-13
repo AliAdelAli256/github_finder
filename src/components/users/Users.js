@@ -13,7 +13,7 @@ const Users = () => {
         return <Spinner />
     } else {
         return (
-            <Grid container spacing={3}>
+            <Grid container spacing={3} style={{ marginBottom: "50px"}}>
                 {users.map(user => (
                     <Grid key={user.id} item xs={6} sm={4} md={3} lg={2.4}>
                       <UserItem user={user} />
